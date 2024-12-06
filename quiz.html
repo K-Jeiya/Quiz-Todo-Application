@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application?</title>
+  <link rel="shortcut icon" href="./images/quizicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+  <div class="container" id="login-page">
+    <img src="./images/logo.png" alt="Quiz Logo" class="logo">
+    <h1>Frontend Quiz</h1>
+    <form id="login-form">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="text" id="roll" placeholder="Enter your roll number" required>
+      <button type="submit">Start Quiz</button>
+    </form>
+  </div>
+
+  <div class="container hidden" id="quiz-page">
+    <h2 id="question"></h2>
+    <div class="options">
+      <button class="option-btn" data-option="1"></button>
+      <button class="option-btn" data-option="2"></button>
+      <button class="option-btn" data-option="3"></button>
+      <button class="option-btn" data-option="4"></button>
+    </div>
+    <button id="next-btn" class="hidden">Next Question</button>
+  </div>
+
+  <div class="container hidden" id="result-page">
+    <h1>Your Score: <span id="score"></span></h1>
+    <button id="restart-btn">Restart Quiz</button>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

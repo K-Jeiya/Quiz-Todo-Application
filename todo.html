@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Application📃</title>
+  <link rel="shortcut icon" href="./images/favicon1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="todo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="welcome-screen">
+    <img src="./images/todologo.png" alt="Quiz Logo" class="logo">
+    <h1>Welcome to Todo List</h1>
+    <p>"Every task completed is a step closer to success!🔐"</p>
+    <button id="start-btn">Start Now</button>
+  </div>
+
+  <div id="todo-screen">
+    <img src="./images/todologo.png" alt="Quiz Logo" class="logo">
+    <h1>Todo List📃</h1>
+    <div id="todo-container">
+      <input type="text" id="todo-input" placeholder="Enter a todo">
+      <button id="add-btn">Add</button>
+    </div>
+    <h4>Manage your todos:</h4>
+    <ul id="todo-list"></ul>
+    <button id="delete-all-btn">Delete All</button>
+  </div>
+  <script src="todo.js"></script>
+</body>
+</html>
